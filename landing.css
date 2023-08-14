@@ -1,0 +1,69 @@
+.landing {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner-image {
+  width: 80%;
+  height: auto;
+  border-radius: 10px;
+  /* Let the image determine its height */
+  /* max-height: 350px; */
+  /* You can adjust as needed */
+  /* object-fit: cover; */
+}
+
+.details-button {
+  width: 5rem;
+  margin: 2rem auto;
+}
+
+#heading {
+  font-weight: 900;
+  line-height: 1.15;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  z-index: 1;
+}
+
+#heading {
+  font-weight: 900;
+  line-height: 1.15;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  z-index: 1;
+}
+
+/* #heading h1 { */
+  /* font-size: 36px; */
+  /* color: #efe9dd; */
+  /* line-height: 1.5; */
+  /* background-color: #efe9dd; */
+/* } */
+
+#heading-top,
+#heading-and,
+#heading-bottom {
+  font-size: 6rem;
+  text-decoration: none;
+  transition: all 0.1s linear;
+  -webkit-transition: -webkit-transform all 0.1s linear;
+  -moz-transition: -moz-transform all 0.1s linear;
+  -ms-transition: -ms-transform all 0.1s linear;
+}
+
+#heading-and {
+  font-size: 3rem;
+}
+
+
+
+#heading p {
+  font-size: 24px;
+  margin: 10px 0;
+}
+

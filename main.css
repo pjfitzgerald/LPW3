@@ -1,0 +1,139 @@
+@import url("https://use.typekit.net/std3xut.css");
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "brother-1816", sans-serif;
+  background-color: #A0522D;
+  color: #EFE9DD;
+  /* Updated font color */
+  flex-direction: column;
+  align-items: center;
+  }
+
+img {
+  image-orientation: from-image;
+}
+
+a {
+  color: #EFE9DD;
+  font-weight: 700;
+  transition: all 350ms;
+}
+
+
+
+
+
+
+
+#heading {
+  font-weight: 900;
+  line-height: 1.15;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  z-index: 1;
+}
+
+/* #heading h1 {
+  font-size: 36px;
+  color: #efe9dd;
+  line-height: 1.5;
+  /* background-color: #efe9dd; */
+}
+
+#heading-top,
+#heading-bottom {
+    text-decoration: none;
+    font-size: 8rem;
+    transition: all 0.1s linear;
+    -webkit-transition: -webkit-transform all 0.1s linear;
+    -moz-transition: -moz-transform all 0.1s linear;
+    -ms-transition: -ms-transform all 0.1s linear;
+}
+
+#heading p {
+  font-size: 24px;
+  margin: 10px 0;
+} */
+
+.photos-column {
+  width: 20%;
+  padding: 10px;
+}
+
+.photos-column img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.details-content {
+  width: 75%;
+  padding: 10px;
+}
+
+.details-content h1 {
+  font-size: 28px;
+  color: #84894A;
+}
+
+.details-content h2 {
+  font-size: 20px;
+  margin: 15px 0;
+  color: #BF5700;
+}
+
+.button {
+  color: #EFE9DD;
+  background-color: #84894A;
+  text-decoration: none;
+  padding: 0.6rem;
+  border-radius: 4px;
+  font-weight: 700;
+  display: inline-block;
+  margin-bottom: 4rem;
+  /* Updated button color */
+  border: none;
+
+
+  cursor: pointer;
+  margin: 20px;
+}
+
+button:hover {
+  background-color: #BF5700;
+}
+
+.details-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+/* Mobile responsive design */
+@media screen and (max-width: 768px) {
+
+  .photos-column,
+  .details-content {
+    width: 100%;
+  }
+
+  .details-wrapper {
+    flex-direction: column;
+  }
+
+  #heading h1 {
+    font-size: 28px;
+  }
+
+  #heading p {
+    font-size: 18px;
+  }
+
+  button {
+    padding: 8px 16px;
+    font-size: 16px;
+  }
+}
