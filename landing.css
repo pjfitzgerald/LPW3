@@ -8,17 +8,21 @@
 .landing-container {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
 }
 
+
+.landing-img-container {
+  width: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 .landing-image {
   width: 80%;
   height: auto;
   border-radius: 10px;
-  /* Let the image determine its height */
-  /* max-height: 350px; */
-  /* You can adjust as needed */
-  /* object-fit: cover; */
 }
 
 .details-button {
@@ -29,12 +33,16 @@
 
 
 #heading-container {
-  font-weight: 900;
-  line-height: 1.15;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+  font-weight: 900;
+  line-height: 1.15;
   text-align: center;
-  z-index: 1;
+  margin-right: 5%;
+  /* z-index: 1; */
 }
 
 #heading-top,
@@ -63,6 +71,28 @@
 /* Mobile responsive design */
 @media screen and (max-width: 768px) {
 
+  .landing-container {
+    flex-direction: column;
+  }
+
+  .landing-img-container, #heading-container {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  #heading-container {
+    margin-top: 5%
+  }
+
+  .landing {
+    align-items: flex-start;
+  }
+
+  .landing-image {
+    margin-top: 5%;
+  }
+
+  
   .photos-column,
   .details-content {
     width: 100%;
@@ -80,8 +110,8 @@
     font-size: 18px;
   }
 
-  button {
+  /* button {
     padding: 8px 16px;
     font-size: 16px;
-  }
+  } */
 }
