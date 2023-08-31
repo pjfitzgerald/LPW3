@@ -30,13 +30,13 @@ a {
   border-radius: 4px;
   font-weight: 700;
   display: inline-block;
-  margin-bottom: 4rem;
+  /* margin-bottom: 4rem; */
   /* Updated button color */
   border: none;
 
 
   cursor: pointer;
-  margin: 20px;
+  /* margin: 20px; */
 }
 
 button:hover {

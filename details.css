@@ -9,6 +9,15 @@
   padding: 10px;
 }
 
+.details-container {
+  margin-bottom: 25px;
+  /* height: 100%; */
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  justify-content: center;
+}
+
 .details-content h1 {
   font-size: 3rem;
   /* color: #84894A; */
@@ -25,7 +34,7 @@
   padding: 10px;
 }
 
-.photos-column img {
+.photos-column video {
   width: 100%;
   height: auto;
   margin-bottom: 10px;
