@@ -4,8 +4,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="details.css">
+  <link rel="stylesheet" href="landing.css">
+
+
+
   <title>Lily & Pat’s Wedding</title>
+
 </head>
 
 
@@ -15,36 +21,55 @@
 
 <body>
 
+  <div class="details-page-container">
 
-  <div class="greeting">
-
-  </div>
-
-  <section class="details">
-    
-  </section>
-
-
-
-
-
-
-
-
-  <div class="details-wrapper">
     <div class="photos-column">
-      <img id="img-topleft" class="header-image" src="pic1.jpeg" alt="Picture 1">
-      <img id="img-topright" class="header-image" src="pic2.jpeg" alt="Picture 2">
-      <!-- Add more images as needed -->
+      
+      <img id="img-topleft" class="photos-column-image" src="pic1.jpeg" alt="Picture 1">
+      <img id="img-topright" class="photos-column-image" src="pic5.jpg" alt="Picture 5">
+      <video class="photos-column-image" width="320" height="240" autoplay loop muted>
+        <source src="greece-movie.mov" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+      <video class="photos-column-image" width="320" height="240" autoplay loop muted>
+        <source src="proposal-movie.mov" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+    
+
     </div>
-    <div class="details-content">
-      <h1>Finer Details</h1>
-      <h2>Location</h2>
-      <p>44 Viewbank St, Shoreham, VIC</p>
-      <!-- Rest of the subheadings and details here -->
+
+    <div class="details-container">
+      
+      <div class="greeting">
+        <h1>&lt;name&gt; </h1>
+      </div>
+
+      <div class="details-content">
+        <h1>We want you at our wedding!</h1>
+        <h2>When & where</h2>
+        <p>February 23rd 2024 <br>
+        4pm <br>
+        44 Viewbank St, Shoreham, VIC
+        </p>
+        <h2>Where to stay</h2>
+        <p>If you're interested in staying down on the Peninsula, there are lots of options to be found on AirBnB. Shoreham, Flinders, Merricks, and Balnarring are all close by.</p>
+        <h2>Dress code</h2>
+        <p>We recommend you avoid stilettos, as there will be some uneven ground!</p>
+        <h2>Gifts</h2>
+        <p>Golden retriever fund....</p>
+      </div>
+
+      <a href="rsvp.html" class="button">RSVP here!</a>
+
     </div>
   </div>
-  <a href="rsvp.html" class="button">RSVP</a>
+
+
+
+
+
+  
 </body>
 
 </html>

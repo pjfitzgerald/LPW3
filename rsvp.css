@@ -1,0 +1,10 @@
+.rsvp-img {
+  width: 250px;
+  border-radius: 10px;
+}
+
+.rsvp-container {
+  display: flex;
+  flex-direction: column;
+  margin: 0 20px;
+}

@@ -92,16 +92,6 @@
     margin-top: 5%;
   }
 
-  
-  .photos-column,
-  .details-content {
-    width: 100%;
-  }
-
-  .details-wrapper {
-    flex-direction: column;
-  }
-
   #heading-container h1 {
     font-size: 28px;
   }

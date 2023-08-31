@@ -21,32 +21,6 @@ a {
   transition: all 350ms;
 }
 
-.photos-column {
-  width: 20%;
-  padding: 10px;
-}
-
-.photos-column img {
-  width: 100%;
-  height: auto;
-  margin-bottom: 10px;
-}
-
-.details-content {
-  width: 75%;
-  padding: 10px;
-}
-
-.details-content h1 {
-  font-size: 28px;
-  color: #84894A;
-}
-
-.details-content h2 {
-  font-size: 20px;
-  margin: 15px 0;
-  color: #BF5700;
-}
 
 .button {
   color: #EFE9DD;
@@ -67,11 +41,5 @@ a {
 
 button:hover {
   background-color: #BF5700;
-}
-
-.details-wrapper {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
 }
 

@@ -2,18 +2,29 @@
 <html lang="en">
 
 <head>
-  <!-- rest of the head -->
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="rsvp.css">
 </head>
 
 <body>
-  <div class="rsvp-content">
+  <div class="rsvp-container">
     <h1>RSVP</h1>
+    <div class="rsvp-img-container">
+      <img class="rsvp-img" src="rsvp-picture.jpg" alt="rsvp-picture">
+
+      <video class="rsvp-img" width="320" height="240" autoplay loop muted>
+        <source src="vegie-bar-movie.mov" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+    </div>
+    
     <form action="submit_rsvp.php" method="post">
       <h2>Dietary Requirements</h2>
       <input type="text" id="diet" name="diet">
       <h2>Anything to Add?</h2>
+      <h2>Will you be attending?</h2>
       <textarea id="notes" name="notes"></textarea>
-      <button type="submit">Submit</button>
+      <button class="button"type="submit">Submit</button>
     </form>
   </div>
 </body>
