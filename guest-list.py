@@ -1,0 +1,68 @@
+guests = [ 
+  "Jane%20and%20Tim"
+, "Chloe"
+, "Alice%20and%20Jack"
+, "Oliver"
+, "Rebecca"
+, "Elijah"
+, "Margie%20and%20Richard"
+, "Cath%20and%20Michael"
+, "Anthony%20and%20Rachel"
+, "Anne"
+, "Taylor%20and%20Sam"
+, "Jess%20and%20Peter"
+, "Hayley%20and%20Nathan"
+, "Bel%20and%20Tom"
+, "Sophie%20and%20Siane"
+, "Kia"
+, "Xander"
+, "Winnie"
+, "Rose"
+, "Jane%20and%20Kevin"
+, "Dave%20and%20Jane"
+, "Matthew%20and%20Julie"
+, "Sarah"
+, "Kate"
+, "Tony%20and%20Sophie"
+, "Pheobe"
+, "Kate"
+, "Jenny%20and%20John"
+, "Bridge%20and%20Kevin"
+, "Lizzy%20and%20Tom%20and%20Teddy"
+, "Michael"
+, "Mark%20and%20Maria"
+, "Margaret%20and%20Steve"
+, "Damian,%20Alison,%20Will,%20and%20Joey"
+, "Dan"
+, "PBro"
+, "Patto"
+, "Healy"
+, "Matt"
+, "Lukush"
+, "Dave"
+, "Ben%20and%20Talia"
+, "Georgia"
+, "Tiffany"
+, "Pete,%20Julia,%20and%20Ned"
+, "Graham%20and%20Arwel"
+, "Moose"
+, "Shags"
+, "Brad"
+, "Knackers"
+, "Jamie"
+, "Todd%20and%20Tash"
+, "Carsten"
+, "Adam Rynsaardt"
+, "Sue"
+, "Theresa"
+, "Tom"]
+
+links = []
+
+for guest in guests:
+  links.append(f"details.html?guest={guest}")
+
+
+for link in links:
+  print(f"{link}")
+# print(links)

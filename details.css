@@ -4,23 +4,32 @@
 
 }
 
+.greeting {
+  width: 75%;
+  padding: 0 10px;
+}
+
+.greeting h1 {
+  font-size: 3rem;
+  margin: 0;
+  margin-bottom: 50px;
+}
+
 .details-content {
   width: 75%;
   padding: 10px;
 }
 
 .details-container {
-  margin-bottom: 25px;
   /* height: 100%; */
   display: flex;
   flex-direction: column;
-  /* align-items: center; */
   justify-content: center;
 }
 
 .details-content h1 {
   font-size: 3rem;
-  /* color: #84894A; */
+  margin: 0 0 50px 0;
 }
 
 .details-content h2 {
@@ -45,6 +54,15 @@
 
 }
 
+#rsvp-button {
+  margin-top: 50px;
+}
+
+.rsvp-info {
+  margin-top: 5px;
+  font-size: 12px;
+}
+
 
 .photos-column-image {
   border-radius: 10px;
@@ -67,6 +85,7 @@
   .details-container {
     padding-right: 50px;
     padding-left: 50px;
+    margin-bottom: 50px;
   }
 
   .details-content {

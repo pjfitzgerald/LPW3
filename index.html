@@ -32,12 +32,31 @@
         <div id="heading-and">&</div>
         <div id="heading-bottom">Patrick</div>
         <div id="date">February 23rd, 2024</div>
-        <a class="button details-button" href="details.html">details</a>
+        <a class="button details-button" id="detailsLink" href="details.html">details</a>
       </div>
 
     </div>
 
   </section>
+
+  <script>
+    window.addEventListener('DOMContentLoaded', () => {
+        const detailsLink = document.getElementById('detailsLink');
+        const params = new URLSearchParams(window.location.search);
+
+        if (params.has('guest')) {
+          detailsLink.href += '?' + params.toString();
+        }
+      });
+
+      const baseLink = 'details.html?guest=';
+      const guestNames = ['John', 'Jane', 'Doe', 'Emily'];
+
+      const generatedLinks = guestNames.map(name => baseLink + encodeURIComponent(name));
+
+      // Output the links
+      generatedLinks.forEach(link => console.log(link));
+  </script>
 
 </body>
 

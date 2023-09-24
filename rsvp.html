@@ -8,26 +8,43 @@
 
 <body>
   <div class="rsvp-container">
+
     <h1>RSVP</h1>
+    
     <div class="rsvp-img-container">
+      
       <video class="rsvp-img" width="320" height="240" autoplay loop muted>
         <source src="vegie-bar-movie.mov" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
+      
       <video class="photos-column-image" width="320" height="240" autoplay loop muted>
         <source src="greece-movie.mov" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
     </div>
     
-    <form action="submit_rsvp.php" method="post">
-      <h2>Dietary Requirements</h2>
-      <input type="text" id="diet" name="diet">
-      <h2>Anything to Add?</h2>
-      <h2>Will you be attending?</h2>
-      <textarea id="notes" name="notes"></textarea>
-      <button class="button"type="submit">Submit</button>
+
+  <form name="gform" id="gform" enctype="text/plain"
+  action="https://docs.google.com/forms/d/e/1FAIpQLSe8NMB7JUjIfZUOSiAmc5WpJgFA69Ah_mYiZXj5OK0t4q97oA/formResponse?"
+  target="hidden_iframe" onsubmit="submitted=true;">
+      Please write your full name(s) below<br>
+      <input type="text" name="firstname"><br><br>
+      Can you attend?<br>
+      <input type="text" name="lastname"><br><br>
+      Please list any dietary requirements<br>
+      <input type="text" name="lastname"><br><br>
+      Anything else that we should know about or can help you with?<br>
+      <input type="text" name="lastname"><br><br>
+
+      <input type="submit" value="Submit">
     </form>
+
+    <div id="ff-compose"></div>
+    <script async defer
+    src="https://formfacade.com/include/104256468215952366760/form/1FAIpQLSe8NMB7JUjIfZUOSiAmc5WpJgFA69Ah_mYiZXj5OK0t4q97oA/classic.js?div=ff-compose"></script>
+
+
   </div>
 </body>
 

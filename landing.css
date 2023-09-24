@@ -60,12 +60,12 @@
   font-size: 3rem;
 }
 
-
-
 #heading-container p {
   font-size: 24px;
   margin: 10px 0;
 }
+
+
 
 
 /* Mobile responsive design */
@@ -85,13 +85,8 @@
   }
 
   .landing {
-    align-items: flex-start;
+    align-items: center;
   }
-
-  .landing-image {
-    margin-top: 5%;
-  }
-
 
   #heading-container h1 {
     font-size: 28px;

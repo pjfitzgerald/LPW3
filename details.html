@@ -49,24 +49,24 @@
     <div class="details-container">
       
       <div class="greeting">
-        <!-- <h1>&lt;name&gt; </h1> -->
+        <h1 id="guest-name">Hi, friend</h1>
+
       </div>
 
       <div class="details-content">
         <h1>We want you at our wedding!</h1>
         <h2>When & where</h2>
-        <p>February 23rd 2024 <br>
-        4pm <br>
-        Lily's Uncle and Auntie's Place <br>
-        44 Viewbank St, Shoreham, VIC
+        <p>February 23rd 2024<br>
+        4pm arrival for 4:30pm ceremony<br><br>
+        Anthony & Rachel's<br>
+        44 Viewbank St, Shoreham, VIC<br>
         </p>
         <h2>Where to stay</h2>
         <p>If you're interested in staying down on the Peninsula, there are lots of options to be found on AirBnB. Shoreham, Flinders, Merricks, and Balnarring are all close by.</p>
         <h2>Dress code</h2>
         <p>We recommend you avoid stilettos, as there will be some uneven ground!</p>
-        <h2>Gifts</h2>
-        <p>Golden retriever fund....</p>
-        <a href="rsvp.html" class="button">RSVP here!</a>
+        <a href="http://bit.ly/lilyandpat" target="_blank" class="button" id="rsvp-button">RSVP here!</a>
+        <p class="rsvp-info">This will take you to a google form. Please submit this to send your RSVP to us!</p>
       </div>
 
 
@@ -74,10 +74,15 @@
   </div>
 
 
+  <script>
+    const params = new Proxy(new URLSearchParams(window.location.search), { get: (searchParams, prop) => searchParams.get(prop) });
+    document.querySelector('#guest-name').textContent = params.guest ? `${params.guest},` : 'Friend,';
 
+  </script>
 
 
   
 </body>
 
 </html>
+
